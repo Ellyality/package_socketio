@@ -132,8 +132,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1788052226}
+  - component: {fileID: 1788052227}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: NetworkUnit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,6 +155,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1788052227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788052225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dda827981cfaae469acbc2d5f2c0700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uri: ws://127.0.0.1:1935
+  StartAtBegining: 1
+  RandomizationFactor: 0.5
+  ReconnectionDelay: 1000
+  ReconnectionDelayMax: 5000
+  ReconnectionAttempts: 2147483647
+  Path: /socket.io
+  ConnectionTimeout: 20
+  Reconnection: 1
+  Transport: 1
+  EIO: 4
+  AutoUpgrade: 1
+  ThreadScope: 0
+  Events: []
+  UnityEvents: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
