@@ -42,6 +42,7 @@ namespace Ellyality.SocketIO
             {
                 try
                 {
+                    socket.Disconnect();
                     socket.Dispose();
                 }
                 catch (Exception) 
