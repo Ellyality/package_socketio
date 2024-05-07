@@ -10,5 +10,6 @@
 	"description": "Sqlite database SDK",
     "documentationUrl": "https://github.com/Ellyality/package_socketio/blob/main/README.md",
     "dependencies": {
+		 "com.ellyality.data.newtonsoft.json": "1.0.0"
     }
 }
