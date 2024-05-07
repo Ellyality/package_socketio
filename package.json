@@ -1,13 +1,13 @@
 {
 	"name": "com.ellyality.network.socketio",
 	"displayName":"Elly SocketIO",
-	"version": "1.0.0",
+	"version": "1.0.6",
     "author": "Elly",
     "unity": "2019.2",
     "keywords": ["socket", "socketio", "network", "multiplayer"],
     "category": "engineering",
     "license": "LICENSE",
-	"description": "Sqlite database SDK",
+	"description": "Socket IO network",
     "documentationUrl": "https://github.com/Ellyality/package_socketio/blob/main/README.md",
     "dependencies": {
 		 "com.ellyality.data.newtonsoft.json": "1.0.0"
