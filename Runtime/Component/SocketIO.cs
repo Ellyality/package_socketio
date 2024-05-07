@@ -54,6 +54,7 @@ namespace Ellyality.SocketIO
         public void StartSocketIO()
         {
             if (socket != null) return;
+            Debug.Log($"Socket IO Start!\nPath: {Path}\nURL: {uri}");
             socket = new SocketIOUnity(uri, new SocketIOOptions
             {
                 Query = new Dictionary<string, string>
@@ -81,6 +82,8 @@ namespace Ellyality.SocketIO
             {
                 socket.OnUnityThread(UnityEvents[i].EventName, UnityEvents[i].Callback.Invoke);
             }
+            Debug.Log("Trying connect");
+            socket.Connect();
         }
 
         public void Emit(string eventName, params object[] data) => socket.Emit(eventName, data);
